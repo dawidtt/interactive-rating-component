@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="top">
+        <img src="./images/icon-star.svg" alt="" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div id="bottom">
+        <div id="ratings">
+          <button
+            class="rating"
+            id="rating-1"
+            onmouseover="changeBg(0)"
+            onclick="ratingResult(1)"
+            onmouseleave="changeBgToNormal(0)"
+          >
+            1
+          </button>
+          <button
+            class="rating"
+            id="rating-2"
+            onmouseover="changeBg(1)"
+            onclick="ratingResult(2)"
+            onmouseleave="changeBgToNormal(1)"
+          >
+            2
+          </button>
+          <button
+            class="rating"
+            id="rating-3"
+            onmouseover="changeBg(2)"
+            onclick="ratingResult(3)"
+            onmouseleave="changeBgToNormal(2)"
+          >
+            3
+          </button>
+          <button
+            class="rating"
+            id="rating-4"
+            onmouseover="changeBg(3)"
+            onclick="ratingResult(4)"
+            onmouseleave="changeBgToNormal(3)"
+          >
+            4
+          </button>
+          <button
+            class="rating"
+            id="rating-5"
+            onmouseover="changeBg(4)"
+            onclick="ratingResult(5)"
+            onmouseleave="changeBgToNormal(4)"
+          >
+            5
+          </button>
+        </div>
+        <button onclick="submit()" id="submit-button">SUBMIT</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
