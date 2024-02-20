@@ -1,5 +1,5 @@
 let rating = 0;
-if (window.innerWidth >= 700) {
+if (window.innerWidth >= 992) {
   function changeBg(n) {
     const button = document.getElementsByClassName("rating");
 
@@ -64,7 +64,7 @@ if (window.innerWidth >= 700) {
       }
     }
   }
-} else if (window.innerWidth < 700) {
+} else if (window.innerWidth < 992) {
   let switching = false;
   function ratingResult(n) {
     const button = document.getElementsByClassName("rating");
